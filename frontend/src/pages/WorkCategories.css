@@ -1,0 +1,135 @@
+.work-section {
+  background: linear-gradient(to bottom, #f9fafb, #f1f5f9);
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.work-title {
+  font-size: 2.5rem;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.work-subtitle {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.work-card {
+  background: white;
+  border-radius: 18px;
+  width: 260px;
+  height: 320px;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  position: relative;
+}
+
+.work-card:hover {
+  transform: scale(1.03);
+}
+
+/* Flip animation container */
+.work-front,
+.work-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.6s ease;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-card.flipped .work-front {
+  transform: rotateY(180deg);
+}
+
+.work-back {
+  transform: rotateY(180deg);
+  color: white;
+  padding: 1.8rem;
+  text-align: left;
+}
+
+.work-card.flipped .work-back {
+  transform: rotateY(360deg);
+}
+
+/* Front side */
+.work-front img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+.work-front h2 {
+  font-size: 1.3rem;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.work-front p {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+/* Back side color themes */
+.work-orange {
+  background: linear-gradient(135deg, #fb923c, #fbbf24);
+}
+
+.work-green {
+  background: linear-gradient(135deg, #10b981, #34d399);
+}
+
+.work-purple {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+}
+
+.work-teal {
+  background: linear-gradient(135deg, #14b8a6, #2dd4bf);
+}
+
+.work-blue {
+  background: linear-gradient(135deg, #3b82f6, #06b6d4);
+}
+
+/* Back side text */
+.work-back h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.work-back ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.click-msg {
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+  text-align: center;
+}

@@ -1,0 +1,109 @@
+/* 🌿 Volunteer Form — Soothing Modern UI */
+
+.volunteer-container {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(120deg, #f0fdfa, #e0f7fa);
+  min-height: 100vh;
+}
+
+/* ✨ Form Title and Subtitle */
+.form-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  color: #005f73;
+  margin-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.form-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  color: #0a9396;
+  margin-bottom: 2rem;
+}
+
+/* 🌸 Main Form Box */
+.volunteer-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2.5rem 3rem;
+  background: linear-gradient(135deg, #ffffff, #f0f9f9);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: 'Poppins', sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.volunteer-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* 💧 Inputs, Selects, and Textareas */
+.volunteer-form input,
+.volunteer-form select,
+.volunteer-form textarea {
+  padding: 0.9rem 1rem;
+  border: 1px solid #c7e0e8;
+  border-radius: 10px;
+  font-size: 1rem;
+  background: #ffffff;
+  transition: all 0.25s ease;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.03);
+}
+
+.volunteer-form input:focus,
+.volunteer-form select:focus,
+.volunteer-form textarea:focus {
+  border-color: #0a9396;
+  box-shadow: 0 0 8px rgba(10, 147, 150, 0.3);
+  outline: none;
+}
+
+/* 🌿 Textarea adjustments */
+.volunteer-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+/* 🌼 Button */
+.volunteer-form button {
+  background: linear-gradient(135deg, #0a9396, #005f73);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(10, 147, 150, 0.3);
+}
+
+.volunteer-form button:hover {
+  background: linear-gradient(135deg, #94d2bd, #0a9396);
+  box-shadow: 0 8px 20px rgba(10, 147, 150, 0.4);
+  transform: translateY(-2px);
+}
+
+/* 🌤️ Placeholder styling */
+.volunteer-form input::placeholder,
+.volunteer-form textarea::placeholder {
+  color: #8e9a9c;
+  font-size: 0.95rem;
+}
+
+/* 📱 Responsive */
+@media (max-width: 600px) {
+  .volunteer-form {
+    padding: 1.5rem;
+  }
+  .form-title {
+    font-size: 1.8rem;
+  }
+}

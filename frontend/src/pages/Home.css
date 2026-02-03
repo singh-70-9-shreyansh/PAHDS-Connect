@@ -1,0 +1,189 @@
+/* General Layout */
+.home-container {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Background Image (hero-bg) */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.psddots.com/wp-content/uploads/2013/06/multi-color_spot_light_background.jpg")
+    center/cover no-repeat;
+  z-index: 0;
+  transform: scale(1.05);
+  animation: zoomIn 10s ease-in-out infinite alternate;
+}
+
+/* Overlay gradient */
+.overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 800px;
+  animation: fadeInOverlay 2s ease-in-out;
+}
+
+/* Headline */
+.overlay h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.overlay h1 span {
+  color: #22d3ee;
+}
+
+/* Paragraph */
+.overlay p {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  color: white;
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.4);
+}
+
+/* Scroll Down Indicator */
+.scroll-down {
+  margin-top: 2rem;
+  animation: fadeIn 2s ease-in;
+}
+
+.scroll-down span {
+  display: inline-block;
+  width: 20px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.scroll-down span::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 1.6s infinite;
+}
+
+.scroll-down p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* About Intro Section */
+.about-intro {
+  background: #f8fafc;
+  color: #0f172a;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-intro p {
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.7;
+  color: #475569;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    top: 6px;
+  }
+  50% {
+    opacity: 1;
+    top: 16px;
+  }
+  100% {
+    opacity: 0;
+    top: 6px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.95rem;
+  }
+}

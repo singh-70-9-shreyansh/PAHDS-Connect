@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+
+.hero .overlay {
+background-color: rgba(0, 0, 0, 0.6);
+color: white;
+padding: 2rem;
+border-radius: 12px;
+width: 80%;
+}
+.btn {
+background-color: #ffb703;
+padding: 0.8rem 1.6rem;
+border: none;
+color: #222;
+border-radius: 8px;
+font-weight: bold;
+text-decoration: none;
+}
+.btn:hover {
+background-color: #ffd166;
+}
+.form-section {
+padding: 4rem 2rem;
+background-color: #fff;
+text-align: center;
+}
+h2 {
+color: #0a9396;
+margin-bottom: 1rem;
+}
+p {
+max-width: 600px;
+margin: 0 auto 2rem;
+line-height: 1.6;
+}
