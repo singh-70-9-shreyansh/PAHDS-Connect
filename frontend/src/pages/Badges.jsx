@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Badges.css";
-import { motion , AnimatePresence } from "framer-motion";
+import {motion, AnimatePresence } from "framer-motion";
 
 export default function Badges() {
   const [selectedBadge, setSelectedBadge] = useState(null);
